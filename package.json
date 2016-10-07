@@ -1,0 +1,47 @@
+{
+  "name": "seneca-brreg",
+  "description": "Look up data from the Norwegian Entity Registry",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "keywords": [
+    "seneca",
+    "microservice",
+    "brreg",
+    "brønnøysund",
+    "Norwegian Entity Registry"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zrrrzzt/seneca-brreg.git"
+  },
+  "bugs": {
+    "url": "http://github.com/zrrrzzt/seneca-brreg/issues"
+  },
+  "homepage": "https://github.com/zrrrzzt/seneca-brreg",
+  "engines": {
+    "node": ">=4.6.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
+    "coverage": "tap test/**/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install && node setup.js",
+    "standard-fix": "standard-fix"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.14",
+    "seneca": "3.2.1",
+    "standard": "8.3.0",
+    "tap": "7.1.2",
+    "nsp": "2.6.2"
+  },
+  "dependencies": {
+    "brreg": "2.0.1"
+  }
+}
