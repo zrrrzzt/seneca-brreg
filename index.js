@@ -9,13 +9,13 @@ module.exports = function brreg (options) {
       query: args.query
     }
 
-    brreg(brregOptions, (error, data) => {
-      if (error) {
-        done(error, null)
-      } else {
+    brreg(brregOptions)
+      .then(data => {
         done(null, data)
-      }
-    })
+      })
+      .catch(error => {
+        done(error, null)
+      })
   })
 
   return options.tag || 'seneca-brreg'

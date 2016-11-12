@@ -1,7 +1,7 @@
 {
   "name": "seneca-brreg",
   "description": "Look up data from the Norwegian Entity Registry",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
