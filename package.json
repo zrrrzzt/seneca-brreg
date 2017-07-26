@@ -39,7 +39,7 @@
     "seneca": "3.4.1",
     "standard": "10.0.2",
     "tap": "10.7.0",
-    "nsp": "2.6.3"
+    "nsp": "2.7.0"
   },
   "dependencies": {
     "brreg": "2.1.0"
