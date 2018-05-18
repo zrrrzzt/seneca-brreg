@@ -11,7 +11,14 @@ module.exports = function brreg (options) {
 
     brreg(brregOptions)
       .then(data => {
-        done(null, data)
+        let out = []
+        if (data.enhetsregisteret.data.entries.length > 0) {
+          out = out.concat(data.enhetsregisteret.data.entries)
+        }
+        if (data.underenheter.data.entries.length > 0) {
+          out = out.concat(data.underenheter.data.entries)
+        }
+        done(null, out)
       })
       .catch(error => {
         done(error, null)

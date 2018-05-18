@@ -17,22 +17,22 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/zrrrzzt/seneca-brreg.git"
+    "url": "git+https://github.com/zrrrzzt/seneca-brreg.git"
   },
   "bugs": {
-    "url": "http://github.com/zrrrzzt/seneca-brreg/issues"
+    "url": "https://github.com/zrrrzzt/seneca-brreg/issues"
   },
-  "homepage": "https://github.com/zrrrzzt/seneca-brreg",
+  "homepage": "https://github.com/zrrrzzt/seneca-brreg#readme",
   "engines": {
-    "node": ">=4.7.2"
+    "node": ">=8.11.2"
   },
   "main": "index.js",
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
     "coverage": "tap test/**/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install",
-    "standard-fix": "standard-fix"
+    "standard-fix": "standard-fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "devDependencies": {
     "coveralls": "3.0.1",

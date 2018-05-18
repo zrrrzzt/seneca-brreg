@@ -32,10 +32,12 @@ seneca.act('role: brreg, cmd: lookup', {query: '994528130'}, (error, data) => {
     console.log(data)
   }
 })
+
+//=> [{entry}]
 ```
 
 ## License
 
 [MIT](LICENSE)
 
-![alt text](https://robots.kebabstudios.party/seneca-brreg.png "Robohash image of seneca-brreg")
+![Robohash image of seneca-brreg](https://robots.kebabstudios.party/seneca-brreg.png "Robohash image of seneca-brreg")

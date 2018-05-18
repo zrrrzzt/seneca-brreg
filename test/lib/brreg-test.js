@@ -37,7 +37,7 @@ tap.test('It returns data on input', (childTest) => {
       throw error
     }
 
-    tap.equal(data.entries[0].orgnr, '994528130', 'Expected data returned from json')
+    tap.equal(data[0].orgnr, '994528130', 'Expected data returned from json')
 
     childTest.done()
     finished()
